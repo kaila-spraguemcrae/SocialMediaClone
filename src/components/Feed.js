@@ -1,5 +1,4 @@
 import React from "react"
-// eslint-disable-next-line 
 import Post from "./Post"
 
 const masterPostList = [
@@ -31,9 +30,9 @@ function Feed() {
       <hr />
       <input placeholder="What's happening?" />
       <div className="feed-list">
-        {masterPostList.map((Post, index) =>
-          <Feed username={Post.username}
-            contents={Post.contents}
+        {masterPostList.map((post, index) =>
+          <Post username={post.username}
+            contents={post.contents}
             key={index} />
         )}
       </div>
@@ -41,4 +40,4 @@ function Feed() {
   );
 }
 
-export default Feed;
+export default Feed

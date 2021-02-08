@@ -5,7 +5,7 @@ function Post(props) {
   return (
     <React.Fragment>
       <h2>{props.username}</h2>
-      <h3>{props.content}</h3>
+      <h3>{props.contents}</h3>
       <hr />
     </React.Fragment>
   );
