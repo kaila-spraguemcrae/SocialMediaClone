@@ -38,3 +38,29 @@ button, input {
   border: 0px solid transparent;
   text-shadow: 0px 0px 0px transparent;
 }
+
+.UserProfile {
+  border: 3px solid lightgrey;
+  width: 300px;
+  height: 250px;
+  padding: 5px;
+}
+
+.user-links {
+  display: inline;
+  border: 3px solid transparent;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.icon {
+  background-color: royalblue;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+.icon-picture {
+  text-align: center;
+  padding-top: 7px;
+  margin: 10px;
+}
