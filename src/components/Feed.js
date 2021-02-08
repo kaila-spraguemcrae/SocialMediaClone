@@ -1,7 +1,8 @@
 import React from "react"
+// eslint-disable-next-line 
 import Post from "./Post"
 
-const masterFeedList = [
+const masterPostList = [
   {
     username: 'Lorem ispsum',
     contents: 'Lorem ipsum dolor sit amet, consectetur asipiscing elit. Nullam'
@@ -25,17 +26,19 @@ const masterFeedList = [
 ];
 
 function Feed() {
-  <React.Fragment>
-    <hr />
-    <input placeholder="What's happening?" />
-    <div className="feed-list">
-      {masterFeedList.map((post, index) =>
-        <Feed username={post.username}
-          contents={post.contents}
-          key={index} />
-      )}
-    </div>
-  </React.Fragment>
+  return (
+    <React.Fragment>
+      <hr />
+      <input placeholder="What's happening?" />
+      <div className="feed-list">
+        {masterPostList.map((Post, index) =>
+          <Feed username={Post.username}
+            contents={Post.contents}
+            key={index} />
+        )}
+      </div>
+    </React.Fragment>
+  );
 }
 
 export default Feed;
