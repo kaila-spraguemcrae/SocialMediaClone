@@ -27,7 +27,6 @@ const masterPostList = [
 function Feed() {
   return (
     <React.Fragment>
-      <hr />
       <input placeholder="What's happening?" />
       <div className="feed-list">
         {masterPostList.map((post, index) =>
